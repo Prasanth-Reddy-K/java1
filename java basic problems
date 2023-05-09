@@ -1,0 +1,216 @@
+public class FirstExample {
+	public static void main(String[] args) {
+	     System.out.println("Hello Prasanth");
+	}
+}
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Hello World ");
+		System.out.println("Hello Students");
+//		System.out.print("Hello Hero Vired");
+		
+//		int a=10;
+//		System.out.println("Value of a: "+a);
+		
+		
+		
+//		int x;
+////		Test t=new Test();
+//		
+	
+//		System.out.print("Enter the value of X: ");
+//		x=sc.nextInt();
+//		
+//		System.out.println("value of x is "+x);
+		
+		//Taking Input from user In String Data Type
+		
+//		String s;
+//		System.out.print("Enter your name: ");
+//		s=sc.nextLine();
+		
+//		
+//		System.out.println("The user name is "+s);
+//		
+//		int a=5;
+//		System.out.println(a++);
+//		System.out.println(++a);
+////		
+//		
+//		int a=15;
+//		int b=7;
+//		int c=10;
+//		
+//		if(a>b && a>c)
+//		{
+//			System.out.println("A is greater than B and C");
+//		}
+//		
+//		else if(b>c){
+//			System.out.println("B is Greater than A and C");
+//		}
+//		
+//		else {
+//			System.out.println("C is Greater");
+//		}
+
+//		
+//		int a=1;
+//		int b=2;
+//		int c=3;
+////		
+//		for(int i=1;i<=5;i++)
+//		{
+//			System.out.println(i);
+//		}
+		
+//		
+//		int i=0;
+//		
+//		while(i<5)
+//		{
+//			i++;
+//			System.out.println(i);
+//		}		
+	}
+}
+
+public class First {
+	public static void main(String[] args) {
+//	 int a=10;
+	 try {
+		int n=10/0;
+			System.out.println(n); 
+		 }
+	 catch (ArithmeticException e) {
+		// TODO: handle exception
+		 e.printStackTrace();
+			System.err.println("Hey Give this a value in float if it is not showing any decimal ");
+	}
+	
+//        System.out.println(a);
+	}
+}
+
+
+public class Demo_Ex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			System.out.println("Open Files");
+			int n=args.length;
+			System.out.println(n);
+			int a=45/n;
+			System.out.println("a= "+a);
+			int b[]= {10,20,30};
+			b[50]=100;
+			
+		}catch(ArithmeticException ae) {
+			System.out.println(ae);
+			System.out.println("Please pass data while running this program");
+		}
+		catch (ArrayIndexOutOfBoundsException aie) {
+			// TODO: handle exception
+			aie.printStackTrace();
+			System.out.println("Please see that the array index is within the range");
+		}
+		finally {
+			System.out.println("Close the file");
+		}
+	}
+}
+
+--
+public class Demo {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			System.out.println("Open files");
+			int n=args.length;
+			System.out.println("n= "+n);
+			int a=45/n;
+			System.out.println("a= "+a);
+			System.out.println("Hey this is running");
+		}
+		catch(ArithmeticException ae) {
+			System.out.println(ae);
+			System.out.println("Please pass data while running this program");
+		}
+		finally {
+			//close the file
+			System.out.println("close the file");
+		}
+	}
+}
+import java.util.Scanner;
+public class ArrayUse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int a[]= {1,2,3,4,5};
+//		System.out.println(a.length);
+//		
+//		System.out.println(a[0]);
+//		a[6]=15;
+		Scanner in=new Scanner(System.in);
+        System.out.print("Enter the Size of an Array: ");
+        int size=in.nextInt();
+        int arr[]=new int[size];
+        for(int i=0;i<size;i++)
+        {
+        	System.out.print("Enter the value of "+i+"th index: ");
+        	arr[i]=in.nextInt();
+        }
+        for(int i=0;i<size;i++)
+        {
+        	System.out.print(arr[i]+" ");
+        }
+//        int arr[]=new int[8];
+	}
+}
+import java.io.*;
+
+public class CreateFile {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+	
+//			  DataInputStream dis= new DataInputStream(System.in);
+//		  FileOutputStream fout=new FileOutputStream("E://myjava.txt");
+//	  
+//		  BufferedOutputStream bout=new BufferedOutputStream(fout,1024);
+//		  
+//		  
+		  
+//		  System.out.println("Enter the data (@ at the end): ");
+			  
+			 int ch;
+			  FileReader fr=null;
+			  try {
+				  fr=new FileReader("E://myjava.txt");
+//				  System.out.println("File is Checked");
+			  }catch(FileNotFoundException fe)
+			  {
+				  System.err.print("File is not found");
+			  }
+			  while((ch=fr.read())!=-1) {
+//				  bout.write(ch);
+				  System.out.print((char)ch);
+		  }
+			  fr.close();
+	}
+}
+
+
+
+
+
+
